@@ -1,2 +1,4 @@
 # PyAgri
-Python based GPS code
+Python based GPS code using pyqt5 for the main GUI. Build to read NMEA strings from a GPS receiver using the GxGGA format. These strings are then parsed and the wgs84 coordinates converted to a UTM projection along with the relevant region i.e. UTM 30U. The software is currently in the very early stages, but allows for a base point to be set which all relevant calculations are based on (to avoid coordinates with 600,000m values etc) as well as stat/pause/stop the GPS serial data stream. It is also possible to define an AB line from setting 2 points which then display euclidean distance from the line. These values can then be used with an integrated lightbar to show the current crosstrack error.
+
+Currently most progress is focused on implementing threads for hardware both input and output such as buttons, LEDs, switches, buzzers, etc
